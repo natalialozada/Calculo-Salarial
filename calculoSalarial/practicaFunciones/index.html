@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica Funciones</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="motor.js" defer></script>
+</head>
+<body>
+
+<div class="titulo">
+    <h1>Sueldo</h1>
+</div>
+
+<div class="sueldo">
+<label for="sueldo">Sueldo bruto anual: </label>
+<input type="number" name="sueldo" id="sueldo" required>
+</div>
+
+<div class="mensualidades">
+    <label for="radio">Mensualidades: </label>
+    <label for="12">12</label>
+    <input type="radio" name="radio" id="radio" value=12>
+    <label for="14">14</label>
+    <input type="radio" name="radio" id="radio" value=14>
+</div>
+
+<div class="hijos">
+    <label for="hijos">Hijos: </label>
+    <input type="number" name="hijos" id="hijos" required>
+</div>
+
+<div class="lista">
+<label for="lista">Tipo de contrato</label>
+<select name="lista" id="lista" required>
+    <option value="opcion1" selected>Elige una opción</option>
+    <option value="Indefinido">Indefinido</option>
+    <option value="Temporal">Temporal</option>
+    <option value="Autónomo">Autónomo</option>
+</select>
+</div>
+
+<div class="boton">
+    <input type="button" name="b1" id="b1" value="Calcular">
+</div>
+
+<div id="resultado"></div>
+</body>
+</html>
